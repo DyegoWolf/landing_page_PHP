@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Fale Conosco - FAESA</title>
 
         <!-- Import do CSS !-->
-        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <link href="./stylesheet.css" rel="stylesheet" type="text/css" />
 
     </head>
 
     <body>
 
+        <!--Menu de navegação-->
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="#"><img src="./media/logo-faesa.png"/></a>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Nossos cursos</a></li>
+                <li><a href="#">Perguntas frequentes</a></li>
+                <li><a href="./index.html">Contato</a></li>
+                <li><button>Acessar conta</button></li>        
+            </ul>
+        </div>
+
+        <!--Primeira seção-->
+        <div id="section01">
+            <h3>Depoimentos</h3>
+            <h1 id="title01">Veja o que nossos alunos têm a dizer sobre nós</h1>
+        </div>
+
+        <!---->
         <!-- Formulário de contato -->
         <form action="index.php" method="POST">
-            <label for="">Nome: </label>
+            <label>Nome: </label>
             <input name="name" type="text" placeholder="Insira seu nome"/>
             
-            <label for="">E-mail: </label>
+            <label>E-mail: </label>
             <input name="email" type="email" placeholder="Insira seu email"/>
 
-            <label for="">Telefone: </label>
+            <label>Telefone: </label>
             <input name="telephone" type="tel" placeholder="Insira seu telefone"/>
             
-            <label for="">Mensagem: </label>
+            <label>Mensagem: </label>
             <input name="message" placeholder="Sua mensagem aqui"/>
             
             <button name="send">Enviar</button>

@@ -1,7 +1,28 @@
-p{
-    font-size: medium;
+.menu{
+    width: 1920px;
+    height: 123px;
+    flex-shrink: 0;
+    background: #FFF;
 }
 
-.input{
-    padding: 30px;
+.section01{
+    background: linear-gradient(180deg, #178EC8 38.54%, rgba(23, 142, 200, 0.00) 100%);
+    width: 1920px;
+    height: 975px;
+    flex-shrink: 0;
+}
+
+h1{
+    color: var(--primary-blue-dark-05-f-3-f-6-f-7, #F3F6F7);
+    font-family: Almarai;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 72px */
+    letter-spacing: -0.48px;
+}
+
+button{
+    border-radius: 4px;
+    background: #188FC9;
 }
