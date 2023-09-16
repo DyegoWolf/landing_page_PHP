@@ -1,6 +1,7 @@
+/* Import da fonte Almarai */
 @import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
 
-
+/* Prevalece para todo o html */
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +16,7 @@ body {
 }
 
 
+/* Cabeçalho */
 .cabecalho {
     display: flex;
     align-items: center;
@@ -36,6 +38,7 @@ body {
   font-weight: 400;
   font-size: 16px
 }
+
 
 /* Conteúdo da página */
 .conteudo {
@@ -87,9 +90,9 @@ body {
     letter-spacing: -0.24px;
     position:absolute;
     top:238px;
-    left:160px;
+    left:235px;
     right:999px;
-    bottom: 355px;
+    bottom:355px;
 }
 
 .conteudo-principal-escrito-botao {
@@ -111,6 +114,10 @@ body {
 
 .conteudo-principal-imagem {
   height: 200px;
+  top:238px;
+  left:235px;
+  right:999px;
+  bottom:355px;
 }
 
 
@@ -179,6 +186,7 @@ form .input-single .input:focus{
     border-bottom: 2px solid #188FC9;
 }
 
+/* Animação ao preencher o formulário */
 form .input-single .input:focus ~ label,
 form .input-single .input:valid ~ label{
     transform: translateY(-20px);
