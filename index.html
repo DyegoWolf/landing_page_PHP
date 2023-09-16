@@ -12,42 +12,56 @@
     <body>
 
         <!--Menu de navegação-->
-        <div id="menu">
-            <ul>
-                <li>
-                    <a href="#"><img src="./media/logo-faesa.png"/></a>
-                </li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Quem somos</a></li>
-                <li><a href="#">Nossos cursos</a></li>
-                <li><a href="#">Perguntas frequentes</a></li>
-                <li><a href="./index.html">Contato</a></li>
-                <li><button>Acessar conta</button></li>        
-            </ul>
-        </div>
+        <header>
+            <nav class="navigation">
+                <a href="#" class="logo"><img src="./media/logo-faesa.png"/></a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">Quem somos</a></li>
+                    <li class="nav-item"><a href="#">Nossos cursos</a></li>
+                    <li class="nav-item"><a href="#">Perguntas frequentes</a></li>
+                    <li class="nav-item"><a href="./index.html">Contato</a></li>
+                    <li><button>Acessar conta</button></li>        
+                </ul>
+            </nav>
+        </header>
 
-        <!--Primeira seção-->
-        <div id="section01">
-            <h3>Depoimentos</h3>
-            <h1 id="title01">Veja o que nossos alunos têm a dizer sobre nós</h1>
-        </div>
+        <!--Conteúdo principal da página-->
+        <main>
+            <section class="section01">
+                <!--Primeira seção-->
+                <h3>Depoimentos</h3>
+                <h1 id="title01">Veja o que nossos alunos têm a dizer sobre nós</h1>
+                <p>São +5 mil alunos formados</p>
+            </section>
 
-        <!---->
-        <!-- Formulário de contato -->
-        <form action="index.php" method="POST">
-            <label>Nome: </label>
-            <input name="name" type="text" placeholder="Insira seu nome"/>
-            
-            <label>E-mail: </label>
-            <input name="email" type="email" placeholder="Insira seu email"/>
+            <!-- Formulário de contato -->
+            <section class="formulario">
+                <form action="index.php" method="POST">
+                    <label>Nome: </label>
+                    <input name="name" type="text" placeholder="Insira seu nome"/>
+                    
+                    <label>E-mail: </label>
+                    <input name="email" type="email" placeholder="Insira seu email"/>
+        
+                    <label>Telefone: </label>
+                    <input name="telephone" type="tel" placeholder="Insira seu telefone"/>
+                    
+                    <label>Mensagem: </label>
+                    <input name="message" placeholder="Sua mensagem aqui"/>
+                    
+                    <button name="send">Enviar</button>
+                </form>
+            </section>
+        </main>
 
-            <label>Telefone: </label>
-            <input name="telephone" type="tel" placeholder="Insira seu telefone"/>
-            
-            <label>Mensagem: </label>
-            <input name="message" placeholder="Sua mensagem aqui"/>
-            
-            <button name="send">Enviar</button>
-        </form>
+        <!--Rodapé da página-->
+        <footer>
+            <p>
+                © 2023 • FAESA
+            </p>
+        </footer>
+
+        
     </body>
 </html>

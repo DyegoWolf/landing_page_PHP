@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Almarai', sans-serif;
+}
+
+body {
+  font-size: 100%;
+  background: white;
+}
+
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    width: 100%;
+    background: var(--neutral-80445158, white);
+    transition: all 0.5s;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 16px;
+}
+
+.cabecalho-menu-item {
+  font-family: 'Almarai', sans-serif;
+  color: #FFF2E7;
+  font-weight: 400;
+  font-size: 16px
+}
+
+/* Conteúdo da página */
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid #FFF2E7;
+  background: linear-gradient(180deg, #178EC8 38.54%, rgba(23, 142, 200, 0.00) 100%);
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    color: var(--primary-blue-dark-05-f-3-f-6-f-7, #F3F6F7);
+    font-family: Almarai;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 60px */
+    letter-spacing: -0.4px;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    color: #BBDDED;
+    font-family: Almarai;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.14px;
+}
+
+.conteudo-principal-paragrafo{
+    color: #FFF;
+    font-family: Almarai;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: -0.24px;
+    position:absolute;
+    top:238px;
+    left:160px;
+    right:999px;
+    bottom: 355px;
+}
+
+.conteudo-principal-escrito-botao {
+  background-color: #ECD6C4;
+  width: 180px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: 'Almarai', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2F2325;
+}
+
+.conteudo-principal-escrito-botao:hover {
+  background-color: rgba(236, 214, 196, 0.53);
+}
+
+.conteudo-principal-imagem {
+  height: 200px;
+}
+
+
+/* Formulário */
+.body-form{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 6%;
+}
+
+form{
+    background: #fff;
+    max-width: 500px;
+    height: 450px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+form h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #01A5D0;
+    font-size: 22pt;
+}
+
+form p{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form .input-single{
+    position: relative;
+    margin: 30px 0;
+}
+
+form .input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    cursor: text;
+    transition: all 0.5s;
+    color: #535E63;
+}
+
+form .input-single .input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #808080;
+    padding: 5px;
+    outline: 0;
+    font-size: 16px;
+}
+
+form .input-single .input:focus{
+    border-bottom: 2px solid #188FC9;
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: #188FC9;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    background: #188FC9;
+}
+
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #188FC9;
+    color: #fff;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+
+/* Rodapé */
+.rodape{
+    background: linear-gradient(180deg, #00A5CF 99.99%, rgba(0, 165, 207, 0.00) 100%);
+}
+
+.rodape p{
+    display: flex;
+    width: 1925px;
+    padding: 8px 717px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color:aliceblue;
+    font-family: 'Almarai', sans-serif;
+}

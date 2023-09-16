@@ -1,28 +1,53 @@
-.menu{
-    width: 1920px;
-    height: 123px;
-    flex-shrink: 0;
-    background: #FFF;
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Almarai', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
+
+body{
+    color: var(--neutral-80445158, #445158);;
+    background: white;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    width: 100%;
+    background: var(--neutral-80445158, white);
+    transition: all 0.5s;
+}
+
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
 
 .section01{
     background: linear-gradient(180deg, #178EC8 38.54%, rgba(23, 142, 200, 0.00) 100%);
-    width: 1920px;
-    height: 975px;
-    flex-shrink: 0;
 }
 
-h1{
-    color: var(--primary-blue-dark-05-f-3-f-6-f-7, #F3F6F7);
-    font-family: Almarai;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%; /* 72px */
-    letter-spacing: -0.48px;
+footer{
+    background: linear-gradient(180deg, #00A5CF 99.99%, rgba(0, 165, 207, 0.00) 100%);
 }
 
-button{
-    border-radius: 4px;
-    background: #188FC9;
+footer p{
+    display: flex;
+    width: 1925px;
+    padding: 8px 717px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color:aliceblue;
+    font-family: 'Almarai', sans-serif;
 }
+

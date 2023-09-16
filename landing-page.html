@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing Page - FAESA">
+  <title>Landing Page - FAESA</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!--Cabeçalho-->
+  <header class="cabecalho">
+    <img class="cabecalho-imagem" src="./media/logo-faesa.png" alt="Logo da FAESA">
+    <nav class="cabecalho-menu">
+        <li class="cabecalho-menu-item"><a href="#">Home</a></li>
+        <li class="cabecalho-menu-item"><a href="#">Quem somos</a></li>
+        <li class="cabecalho-menu-item"><a href="#">Nossos cursos</a></li>
+        <li class="cabecalho-menu-item"><a href="#">Perguntas frequentes</a></li>
+        <li class="cabecalho-menu-item"><a href="./index.html">Contato</a></li>
+        <li><button>Acessar conta</button></li>
+    </nav>
+  </header>
+
+  <!--Conteúdo principal-->
+  <main class="conteudo">
+    <section class="conteudo-principal">
+      <div class="conteudo-principal-escrito">
+        <h2 class="conteudo-principal-escrito-subtitulo">Conheça mais a FAESA</h2>
+        <h1 class="conteudo-principal-escrito-titulo">Mais de 5 mil alunos formados!</h1>
+        <p class="conteudo-principal-paragrafo">Somos o melhor Centro Universitário do Sudeste e um dos melhores do Brasil pela quarta vez consecutiva (IGC/MEC). Trabalhamos determinados no sucesso dos nossos alunos e no fomento do empreendedorismo e da inovação.</p>
+      </div>
+      <img class="conteudo-principal-imagem"src="./media/logo-faesa2.png" alt="Imagem da Balle Bot">
+    </section>
+
+    
+    <section class="body-form">
+        <div class="container">
+            <form action="index.php" method="POST">
+                <h1>Entre em contato</h1>
+                <p>Quer conhecer melhor nossos cursos ou tirar alguma dúvida? Preencha o formulário abaixo que entraremos em contato.</p>
+                <div class="input-single">
+                    <input class="input" type="text" id="name" name="name" required>
+                    <label for="name">Nome completo</label>
+                </div>
+                <div class="input-single">
+                    <input class="input" type="email" id="email" name="email" required>
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="input-single">
+                    <input class="input" type="text" id="telephone" name="telephone" required>
+                    <label for="telephone">Celular</label>
+                </div>
+                <div class="input-single">
+                    <input class="input" type="text" id="message" name="message" required>
+                    <label for="message">Mensagem</label>
+                </div>
+                <div class="btn"><input type="submit" value="Enviar"></div>
+            </form>
+        </div><!--container-->
+    </section>
+
+
+
+<!--
+    <div class="card">
+        <div class="card-conteudo">
+            <form action="index.php" method="POST">
+                <div class="card-item">
+                    <label>Nome: </label>
+                    <input name="name" type="text" placeholder="Insira seu nome"/>
+                </div>
+
+                <div class="card-item">
+                    <label>E-mail: </label>
+                    <input name="email" type="email" placeholder="Insira seu email"/>
+                </div>
+
+                <div class="card-item">
+                    <label>Telefone: </label>
+                    <input name="telephone" type="tel" placeholder="Insira seu telefone"/>
+                </div>
+
+                <div class="card-item">
+                    <label>Mensagem: </label>
+                    <input name="message" placeholder="Sua mensagem aqui"/>
+                </div>
+                
+                <button class="card-botao" name="send">Enviar</button>
+        </div>
+    </div>
+!-->
+
+
+
+    <!-- Formulário de contato 
+    <section class="formulario">
+        <form action="index.php" method="POST">
+            <label>Nome: </label>
+            <input name="name" type="text" placeholder="Insira seu nome"/>
+            
+            <label>E-mail: </label>
+            <input name="email" type="email" placeholder="Insira seu email"/>
+
+            <label>Telefone: </label>
+            <input name="telephone" type="tel" placeholder="Insira seu telefone"/>
+            
+            <label>Mensagem: </label>
+            <input name="message" placeholder="Sua mensagem aqui"/>
+            
+            <button name="send">Enviar</button>
+        </form>
+    !-->
+
+  </main>
+
+    <!--Rodapé da página-->
+    <footer class="rodape">
+        <p>
+            © 2023 • FAESA
+        </p>
+    </footer>
+</body>
+</html>
